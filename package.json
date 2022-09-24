@@ -11,5 +11,13 @@
     "javascript",
     "ecmasript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josueSN1402/Curso-de-ECMAScript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/josueSN1402/Curso-de-ECMAScript/issues"
+  },
+  "homepage": "https://github.com/josueSN1402/Curso-de-ECMAScript#readme",
   "description": ""
 }
