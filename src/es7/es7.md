@@ -1,9 +1,7 @@
 # Exponentiation operator y array includes
-
 La siguiente versión de ECMAScript fue publicada en 2016. Las siguientes características de ES7 o ES2016 que aprenderás son: el método `includes` de arrays y el operador de potenciación.
 
 ## Operador de potenciación
-
 El operador de potenciación (exponential operator) consiste en elevar una base a un exponente utilizando el doble asterisco (`**`).
 
 
@@ -20,9 +18,6 @@ console.log(potencia) // 8
 
 
 ## Método includes
-
-
-
 El método `includes` determina si un array o string incluye un determinado elemento. Devuelve true o `false`, si existe o no respectivamente.
 
 
@@ -76,3 +71,40 @@ frutas[0].includes("man") // true
 ```
 
 [Fuente](https://platzi.com/clases/3504-ecmascript-nuevo/51767-cambios-en-ecmascript-7-exponentiation-operator-ar/)
+
+
+### Includes con objetos
+🔗 En objetos también existen formas para saber si existe una propiedad. Estos son:
+
+La palabra reservada `in`
+El método de objetos `hasOwnProperty`
+El método `Object.hasOwn`, que recibe el objeto y la propiedad a evaluar.
+
+```js
+const letras = { a: 1, b: 2, c: 3 }
+
+"a"in letras // true
+letras.hasOwnProperty("a") // true
+Object.hasOwn(letras, "a") // true
+```
+
+El método hasOwnProperty evalúa solamente las propiedades del objeto. Sin embargo puede que colisione con alguna otra propiedad en el prototipo, por lo que la última versión de ECMAScript lanzó Object.hasOwn y se recomienda utilizar este si el navegador en el que trabajas lo soporta: [Can I use?](https://caniuse.com/?search=hasOwn).
+
+
+```js
+const letras = { a: 1, b: 2, c: 3 }
+
+"toString"in letras // true
+letras.hasOwnProperty("toString") // false
+Object.hasOwn(letras, "toString") // false
+```
+
+
+[Fuente](https://platzi.com/comentario/3944783/)
+
+
+
+
+
+
+
