@@ -2,6 +2,7 @@
   "name": "curso-ecmascript",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,8 @@
     "url": "https://github.com/josueSN1402/Curso-de-ECMAScript/issues"
   },
   "homepage": "https://github.com/josueSN1402/Curso-de-ECMAScript#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  }
 }
